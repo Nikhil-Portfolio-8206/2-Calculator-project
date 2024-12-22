@@ -35,10 +35,15 @@ display.addEventListener("click", () => {
   }
 });
 
+
 display.addEventListener("keydown", (event) => {
   if (isEditMode) {
     // Handle arrow keys for editing
-    if (event.key === "ArrowLeft") {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default behavior (form submission, etc.)
+      calculate(); // Call the calculate function
+    }
+    else if (event.key === "ArrowLeft") {
       // Move cursor left
       const cursorPosition = display.selectionStart;
       if (cursorPosition > 0) {
