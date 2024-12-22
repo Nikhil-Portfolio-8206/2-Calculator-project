@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>  
 </head>
 <body>
     <div class="calculator">
@@ -21,7 +21,7 @@
           <button onclick="appendToDisplay('4')">4</button>
           <button onclick="appendToDisplay('5')">5</button>
           <button onclick="appendToDisplay('6')">6</button>
-          <button onclick="appendToDisplay('*')">*</button>
+          <button class="asterisk-button" onclick="appendToDisplay('*')">*</button>
         </div>
         <div>
           <button onclick="appendToDisplay('1')">1</button>
@@ -37,7 +37,6 @@
         </div>
         <button onclick="clearDisplay()">C</button>
       </div>
-    
     <script src="index.js"></script>
 </body>
 </html>
